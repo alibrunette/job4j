@@ -8,6 +8,7 @@ package ru.job4j.calculate;
  * @since 03.11.2018
  */
 public class Calculate {
+
     /**
      * Main.
      * @param args - args.
