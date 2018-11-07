@@ -4,7 +4,7 @@ package ru.job4j.calculator;
  *
  * @author Alina Maryenko (aliwka.l@gmail.com)
  * @version $Id$
- * @since 03.11.2018
+ * @since 07.11.2018
  */
 
 /**
