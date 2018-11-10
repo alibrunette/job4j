@@ -25,4 +25,16 @@ public class ConverterTest {
         int result = converter.rubleToEuro(70);
         assertThat(result, is(1));
     }
+    @Test
+    public void whenDollarToRubleThen1() {
+        Converter converter = new Converter();
+        int result = converter.rubleToDollar(60);
+        assertThat(result, is(1));
+    }
+    @Test
+    public void whenEuroToRubleThen1() {
+        Converter converter = new Converter();
+        int result = converter.rubleToEuro(70);
+        assertThat(result, is(1));
+    }
 }
