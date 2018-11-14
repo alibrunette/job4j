@@ -60,10 +60,10 @@ package ru.job4j.condition;
      */
     private boolean exist(double ab, double ac, double bc) {
         boolean result = false;
-    if (ab < (ac + bc) || ac < (ab + bc) || bc < (ab + ac)) {
-        result = true;
-    }
+        if (ab < (ac + bc) || ac < (ab + bc) || bc < (ab + bc)) {
+            result = true;
+        }
         return result;
- }
- }
+    }
+}
 
