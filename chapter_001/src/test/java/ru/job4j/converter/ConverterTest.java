@@ -1,16 +1,14 @@
+package ru.job4j.converter;
+import org.junit.Test;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 /**
- * Сonverter.
+ * Converter
  *
  * @author Alina Maryenko (aliwka.l@gmail.com)
  * @version 1.
  * @since 07.11.2019.
  */
-package ru.job4j.converter;
-
-        import org.junit.Test;
-        import static org.hamcrest.core.Is.is;
-        import static org.junit.Assert.assertThat;
-
 public class ConverterTest {
     @Test
     public void when60RubleToDollarThen1() {
@@ -26,15 +24,16 @@ public class ConverterTest {
         assertThat(result, is(1));
     }
     @Test
-    public void whenDollarToRubleThen1() {
+    public void when1EuroToRubleThen70() {
         Converter converter = new Converter();
-        int result = converter.rubleToDollar(60);
-        assertThat(result, is(1));
+        int result = converter.еuroToRuble(1);
+        assertThat(result, is(70));
     }
     @Test
-    public void whenEuroToRubleThen1() {
+    public void when1DollarToRubleThen60() {
         Converter converter = new Converter();
-        int result = converter.rubleToEuro(70);
-        assertThat(result, is(1));
+        int result = converter.dollarToRuble(1);
+        assertThat(result, is(60));
     }
+
 }

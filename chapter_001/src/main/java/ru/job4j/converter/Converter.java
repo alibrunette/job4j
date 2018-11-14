@@ -33,7 +33,7 @@ public class Converter {
      * @param value доллары.
      * @return рубли.
      */
-    public int еuroToRuble(int value) {
+    public int dollarToRuble(int value) {
         return value;
     }
     /**
@@ -42,8 +42,9 @@ public class Converter {
      * @param value евро.
      * @return рубли.
      */
-    public int dollarToRuble(int value) {
-        return value;
+
+        public int еuroToRuble(int value) {
+            return value;
     }
 }
 
